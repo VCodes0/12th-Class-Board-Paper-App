@@ -14,11 +14,11 @@ class JeeMainsApi {
   }
 
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> _data = <String, dynamic>{};
-    _data["id"] = id;
-    _data["year"] = year;
-    _data["file"] = file;
-    return _data;
+    final Map<String, dynamic> data = <String, dynamic>{};
+    data["id"] = id;
+    data["year"] = year;
+    data["file"] = file;
+    return data;
   }
 
   static List<JeeMainsApi> jeeMainsApiData(String data) {

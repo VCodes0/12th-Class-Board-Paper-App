@@ -1,4 +1,6 @@
+import 'package:board_paper/View/pdf_viewer_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
 import '../Controller/neet_controller.dart';
@@ -100,7 +102,11 @@ class _NeetPageState extends State<NeetPage> {
                                     fit: BoxFit.contain,
                                   ),
                                 ),
-                                onTap: () {},
+                                onTap: () {
+                                  Get.to(
+                                        () => PdfViewerPage(pdfUrl: "${item.file}"),
+                                  );
+                                },
                               ),
                             ),
                           );

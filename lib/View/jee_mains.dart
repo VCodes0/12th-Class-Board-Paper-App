@@ -1,6 +1,7 @@
+import 'package:board_paper/View/pdf_viewer_page.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-
 import '../Controller/jeemains_controller.dart';
 
 class JeeMainsPage extends StatefulWidget {
@@ -38,7 +39,6 @@ class _JeeMainsPageState extends State<JeeMainsPage> {
           decoration: BoxDecoration(gradient: bodyColor),
           child: Stack(
             children: [
-              // Header Image
               Positioned(
                 child: Image.asset(
                   "assets/jee_header.png",
@@ -46,7 +46,6 @@ class _JeeMainsPageState extends State<JeeMainsPage> {
                   width: mq.width,
                 ),
               ),
-              // JEE Mains Title Image
               Positioned(
                 top: mq.height * 0.22,
                 left: mq.width * 0.2,
@@ -56,14 +55,13 @@ class _JeeMainsPageState extends State<JeeMainsPage> {
                   width: mq.width,
                 ),
               ),
-              // List of Data
               Positioned(
                 top: mq.height * 0.27,
                 left: 0,
                 right: 0,
                 bottom: 0,
                 child: jeeData.isEmpty
-                    ? Center(child: const CircularProgressIndicator())
+                    ? const Center(child: CircularProgressIndicator())
                     : ListView.builder(
                         physics: const BouncingScrollPhysics(),
                         padding: EdgeInsets.symmetric(
@@ -104,7 +102,11 @@ class _JeeMainsPageState extends State<JeeMainsPage> {
                                     fit: BoxFit.contain,
                                   ),
                                 ),
-                                onTap: () {},
+                                onTap: () {
+                                  Get.to(
+                                    () => PdfViewerPage(pdfUrl: "${item.file}"),
+                                  );
+                                },
                               ),
                             ),
                           );
