@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
                     child: Column(
                       children: [
                         InkWell(
-                          onTap: () => Get.to(() => JeeMainsPage()),
+                          onTap: () => Get.to(JeeMainsPage()),
                           child: courseSelectionCard(
                             context,
                             primaryIcon: FontAwesomeIcons.atom,
@@ -82,7 +82,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         InkWell(
-                          onTap: () => Get.to(() => JeeAdvanced()),
+                          onTap: () => Get.to(JeeAdvanced()),
 
                           child: courseSelectionCard(
                             context,
@@ -96,7 +96,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         InkWell(
-                          onTap: () => Get.to(() => MhCetPage()),
+                          onTap: () => Get.to(MhCetPage()),
                           child: courseSelectionCard(
                             context,
                             primaryIcon: FontAwesomeIcons.graduationCap,
@@ -109,7 +109,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                         InkWell(
-                          onTap: () => Get.to(() => NeetPage()),
+                          onTap: () => Get.to(NeetPage()),
                           child: courseSelectionCard(
                             context,
                             primaryIcon: FontAwesomeIcons.dna,

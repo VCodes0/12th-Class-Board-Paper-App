@@ -103,9 +103,7 @@ class _MhCetPageState extends State<MhCetPage> {
                                   ),
                                 ),
                                 onTap: () {
-                                  Get.to(
-                                        () => PdfViewerPage(pdfUrl: "${item.file}"),
-                                  );
+                                  Get.to(PdfViewerPage(pdfUrl: "${item.file}"));
                                 },
                               ),
                             ),

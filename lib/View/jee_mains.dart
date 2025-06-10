@@ -103,9 +103,7 @@ class _JeeMainsPageState extends State<JeeMainsPage> {
                                   ),
                                 ),
                                 onTap: () {
-                                  Get.to(
-                                    () => PdfViewerPage(pdfUrl: "${item.file}"),
-                                  );
+                                  Get.to(PdfViewerPage(pdfUrl: "${item.file}"));
                                 },
                               ),
                             ),

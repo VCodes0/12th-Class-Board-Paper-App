@@ -108,9 +108,7 @@ class _JeeAdvancedState extends State<JeeAdvanced> {
                                   ),
                                 ),
                                 onTap: () {
-                                  Get.to(
-                                    () => PdfViewerPage(pdfUrl: "${item.file}"),
-                                  );
+                                  Get.to(PdfViewerPage(pdfUrl: "${item.file}"));
                                 },
                               ),
                             ),
