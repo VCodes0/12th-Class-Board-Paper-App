@@ -5,9 +5,7 @@
 </head>
 <body>
 
-  <h1>🎓 12th Class Board Paper App</h1>
-  <p><strong>Access, prepare & excel — easily and offline.</strong></p>
-
+  <h1><center>🎓 12th Class Board Paper App</center></h1>
   <hr>
 
   <h2>📘 Overview</h2>
@@ -33,7 +31,7 @@
   <h2>📁 Tech Stack</h2>
   <ul>
     <li><strong>Flutter + Dart</strong></li>
-    <li>Clean architecture (MVC / Provider / BLoC)</li>
+    <li>Clean architecture (MVC / Provider / Get-X )</li>
     <li>Local file storage for PDFs</li>
     <li>Responsive UI for Android & iOS</li>
   </ul>
@@ -62,8 +60,10 @@ pubspec.yaml             # Dependencies & asset configuration
   <ol>
     <li>
       <strong>Clone the repository:</strong>
-      <pre><code>git clone https://github.com/VCodes0/12th-Class-Board-Paper-App.git
-cd 12th-Class-Board-Paper-App</code></pre>
+      <pre><code>git clone https://github.com/VCodes0/12th-Class-Board-Paper-App.git</code></pre>
+    </li> <li>
+      <strong>Change Directory:</strong>
+      <pre><code>cd 12th-Class-Board-Paper-App</code></pre>
     </li>
     <li>
       <strong>Install dependencies:</strong>
