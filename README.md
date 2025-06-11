@@ -1,59 +1,81 @@
-# 🎓 12th Class Board Paper App
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
 
-Access, prepare & excel — easily and offline.
+  <h1>🎓 12th Class Board Paper App</h1>
+  <p><strong>Access, prepare & excel — easily and offline.</strong></p>
 
-## 📘 Overview
+  <hr>
 
-An educational Flutter app offering **12th-grade board exam previous-year questions (PYQs)**, **model/sample papers**, and **marking schemes**. Ideal for students preparing comprehensively for CBSE, Maharashtra, UP, and other state boards.
+  <h2>📘 Overview</h2>
+  <p>
+    An educational Flutter app offering <strong>12th-grade board exam previous-year questions (PYQs)</strong>,
+    <strong>model/sample papers</strong>, and <strong>marking schemes</strong>.
+    Ideal for students preparing comprehensively for CBSE, Maharashtra, UP, and other state boards.
+  </p>
 
-## 🚀 Features
+  <hr>
 
-- 📚 **Extensive PYQs**: Includes board papers from recent years across major education boards.
-- ✅ **Solved & Sample Papers**: Practice curated papers aligned with current syllabi.
-- 📊 **Marking Schemes**: Learn exam scoring strategies.
-- 🌐 **Offline-ready**: Download papers once and study anytime.
-- 📝 **Chapter-wise Questions** for focused revision.
+  <h2>🚀 Features</h2>
+  <ul>
+    <li>📚 <strong>Extensive PYQs</strong>: Includes board papers from recent years across major education boards.</li>
+    <li>✅ <strong>Solved & Sample Papers</strong>: Practice curated papers aligned with current syllabi.</li>
+    <li>📊 <strong>Marking Schemes</strong>: Learn exam scoring strategies.</li>
+    <li>🌐 <strong>Offline-ready</strong>: Download papers once and study anytime.</li>
+    <li>📝 <strong>Chapter-wise Questions</strong>: For focused revision.</li>
+  </ul>
 
-## 📁 Tech Stack
+  <hr>
 
-- **Flutter + Dart**
-- Clean app architecture (MVC / Provider / BLoC)
-- Local file storage for PDFs
-- Responsive UI for Android & iOS
+  <h2>📁 Tech Stack</h2>
+  <ul>
+    <li><strong>Flutter + Dart</strong></li>
+    <li>Clean architecture (MVC / Provider / BLoC)</li>
+    <li>Local file storage for PDFs</li>
+    <li>Responsive UI for Android & iOS</li>
+  </ul>
 
-## 🗂️ Directory Structure
+  <hr>
 
-```plaintext
+  <h2>🗂️ Directory Structure</h2>
+  <pre>
 lib/
-├── main.dart           # App entry point
-├── screens/            # UI pages
-├── models/             # Data classes for papers
-├── providers/          # State management logic
-├── services/           # File handling & PDF loading
-└── widgets/            # Reusable UI components
+├── main.dart            # App entry point
+├── screens/             # UI pages (Home, Subjects, Paper Viewer, etc.)
+├── models/              # Data classes for papers (e.g., PaperModel)
+├── providers/           # State management logic (Provider or BLoC)
+├── services/            # File handling & PDF utilities
+└── widgets/             # Reusable UI components (buttons, tiles, etc.)
+
 assets/
-├── papers/             # Sample PDF files
-pubspec.yaml            # Dependencies & assets config
+└── papers/              # Sample PDF files
 
-## ⚙️ Installation
+pubspec.yaml             # Dependencies & asset configuration
+  </pre>
 
-1. Clone the repo:
+  <hr>
 
-    ```bash
-    git clone https://github.com/VCodes0/12th-Class-Board-Paper-App.git
-    cd 12th-Class-Board-Paper-App
-    ```
+  <h2>⚙️ Installation</h2>
+  <ol>
+    <li>
+      <strong>Clone the repository:</strong>
+      <pre><code>git clone https://github.com/VCodes0/12th-Class-Board-Paper-App.git
+cd 12th-Class-Board-Paper-App</code></pre>
+    </li>
+    <li>
+      <strong>Install dependencies:</strong>
+      <pre><code>flutter pub get</code></pre>
+    </li>
+    <li>
+      <strong>Run the app:</strong>
+      <pre><code>flutter run</code></pre>
+    </li>
+  </ol>
 
-2. Install dependencies:
+  <hr>
 
-    ```bash
-    flutter pub get
-    ```
-
-3. Run the app:
-
-    ```bash
-    flutter run
-    ```
-
-
+</body>
+</html>
