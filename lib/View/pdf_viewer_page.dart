@@ -17,7 +17,6 @@ class _PdfViewerPageState extends State<PdfViewerPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("12th Board Paper File")),
       body: Stack(
         children: [
           SfPdfViewer.network(
